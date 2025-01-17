@@ -4,7 +4,7 @@ import mixer from "../../assets/mixer.svg";
 export default function Header(props) {
   return (
     <header className="flex justify-between items-center">
-      <button type="button">
+      <button type="button" onClick={props.onClick}>
         <img src={arrowDown} alt="Arrow down icon" className="w-6 h-6" />
       </button>
       <h1 className="text-lg font-bold">{props.title}</h1>

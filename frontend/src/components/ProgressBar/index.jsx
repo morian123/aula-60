@@ -4,7 +4,10 @@ export default function ProgressBar() {
   const progressPercentage = (110 / 220) * 100;
 
   return (
-    <div className="flex items-center justify-between flex-col w-full mt-4 relative">
+    <div className={ 
+      props.isOpen ? 
+      "flex items-center justify-between flex-col w-full mt-4 relative"
+      : hidden}>
       {/* Barra cinza (fundo) */}
       <div className="h-2 bg-gray-500 w-full rounded-3xl"></div>
 
